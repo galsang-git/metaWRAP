@@ -76,8 +76,8 @@ if [ ! -s $SOFT/sort_contigs.py ]; then
 fi
 
 #  Checks for NCBI_nt database for BLAST
-if [ ! -f "${BLASTDB}/nt.00.nhd" ]; then
-	error "The file ${BLASTDB}/nt.00.nhd doesnt exist, which likely means that you havent set the correct path to your NCBI_nt database or\
+if [ ! -f "${BLASTDB}/nt.000.nhd" ]; then
+	error "The file ${BLASTDB}/nt.000.nhd doesnt exist, which likely means that you havent set the correct path to your NCBI_nt database or\
 	 havent downloaded it. Please look and the the script and manually set the correct path to NCBI_nt, and follow these steps to download the\
 	  database: wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/nt.*.tar.gz; for a in nt.*.tar.gz; do tar xzf $a; done"
 fi
